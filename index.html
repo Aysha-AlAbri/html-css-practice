@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My HTML Practice</title>
+</head>
+<body>
+
+    <header>
+        <h1>My Website</h1>
+        <p> Online Tax Services </p>
+        <nav>
+            <a href="Home">Home</a>
+            <a href="Tax Filing">Tax Filing</a>
+            <a href="Payment">Payments</a>
+            <a href="Support">Support</a>
+            <a href="About">About</a>
+        </nav>
+        <form>
+            <label for="search">Search the Portal:</label>
+            <input type="text" id="search" name="search" placeholder="e.g VAT returns">
+            <button type="submit">Search</button>
+        </form>
+    </header>
+    <main>
+<section id="home">
+
+    <h2>Welcome to the Portal</h2>
+
+    <p>
+        This online system allows registered taxpayers to
+        <b>file returns</b>, <i>manage payments</i>, and track submissions
+        online. The portal is designed to simplify communication
+        between taxpayers and the tax authority.
+    </p>
+
+    <p>
+        Use the navigation menu above to explore filing options,
+        review your payment history, or contact support if you
+        need assistance.
+    </p>
+
+    <p>
+        <mark>New users must verify their email before submitting
+            a first return.</mark>
+    </p>
+
+    <p>
+        Filing types include
+        <abbr title="Value Added Tax">VAT</abbr>,
+        <abbr title="Corporate Income Tax">CIT</abbr>, and
+        <abbr title="Personal Income Tax">PIT</abbr>.
+    </p>
+
+    <figure>
+        <img src="Figure.png" alt="Taxpayer dashboard showing filing information" width="700">
+
+        <figcaption>
+            Figure 1: Overview of the taxpayer dashboard
+        </figcaption>
+    </figure>
+
+</section>
+    </main>
+<article>
+
+    <h2>Announcement: VAT Filing Deadline Extended</h2>
+
+    <p>
+        The deadline for quarterly VAT filing has been extended
+        by two weeks to accommodate the recent system maintenance
+        window.
+    </p>
+
+    <figure>
+        <blockquote>
+            <p>
+                All pending VAT submissions will now be accepted
+                until the end of the month without penalty.
+            </p>
+        </blockquote>
+
+        <figcaption>
+            Source: Portal Communications Team.
+        </figcaption>
+    </figure>
+
+    <p>
+        Published:
+        <time datetime="2026-07-20">20 July 2026</time>
+    </p>
+
+</article>
+</footer>
+<section>
+    <h2>Recent Filing Types</h2>
+    <h4> Filing status for the current period</h4>
+<table border ="1">
+<tr>
+    <th>Tax Type</th>
+    <th>Filing Period</th>
+    <th>Status</th>
+</tr>
+
+<tr>
+    <th>VAT </th>
+    <td>Q2 2026</td>
+    <td>Submitted</td>
+</tr>
+<tr>
+    <th>CIT</th>
+    <td>2025 Annual</td>
+    <td>Pending</td>
+</tr>
+<tr>
+    <th>PIT</th>
+    <td>2025 Annual</td>
+    <td>Draft</td>
+</tr>
+</table>
+<div>
+    <label for="completion">Overall filing completion this quarter:</label>
+    <progress id="completion" value="70" max="100">70%</progress>
+    <label for="completion">Average review score for submitted filings:</label>
+<progress id="completion" value="70" max="100">70%</progress>
+</div>
+</section>
+<section id="payments">
+
+    <h2>Register a Payment</h2>
+
+    <form>
+
+        <fieldset>
+
+            <legend>Personal details</legend>
+
+            <p>
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </p>
+
+            <p>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Payment details</legend>
+
+            <p>
+                <label for="amount">Amount (OMR)</label>
+
+                <input type="number" id="amount" name="amount" min="0" step="0.01" required>
+
+                <small>
+                    Enter the amount in Omani Rials,
+                    up to two decimal places.
+                </small>
+            </p>
+
+            <p>
+                <label for="tax-type">Tax Type</label>
+
+                <select id="tax-type" name="tax-type">
+                    <option value="vat">VAT</option>
+                    <option value="cit">CIT</option>
+                    <option value="pit">PIT</option>
+                </select>
+            </p>
+
+            <p>
+                <input type="checkbox" id="confirmation" name="confirmation" required>
+
+                <label for="confirmation">
+                    I confirm the information above is accurate.
+                </label>
+            </p>
+
+        </fieldset>
+
+        <button type="submit">Submit Payment</button>
+        <button type="reset">Clear Form</button>
+
+    </form>
+
+</section>
+<section>
+    <h2>Quick Links</h2>
+    <ol>
+        <li><a href="#">How to file a VAT return</a></li>
+        <li><a href="#">Payment methods accepted</a></li>
+        <li><a href="#">Download tax certificates</a></li>
+        <li><a href="#">Contact a support agent</a></li>
+    </ol>
+    </section>
+
+<section>
+</nav>
+<section>
+
+    <h2>Key Terms</h2>
+
+    <dl>
+
+        <dt>VAT</dt>
+        <dd>
+            A tax added to most goods and services
+            at the point of sale.
+        </dd>
+
+        <dt>Filing Period</dt>
+        <dd>
+            The date range a given return or payment covers.
+        </dd>
+
+    </dl>
+
+</section>
+<footer>
+
+    <small>
+        © 2026 Taxpayer Portal. All rights reserved.
+    </small>
+
+    <address>
+
+        Support:
+        <a href="mailto:support@example.com">
+            support@example.com
+        </a>
+
+        | Phone:
+        <a href="tel:+96812345678">
+            +968 1234 5678
+        </a>
+
+    </address>
+
+    <nav>
+        <a href="#privacy">Privacy Policy</a> |
+        <a href="#terms">Terms of Use</a> |
+        <a href="#support">Contact Us</a>
+    </nav>
+
+</footer>
+</body>
+</html>
