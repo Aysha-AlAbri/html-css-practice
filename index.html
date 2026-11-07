@@ -23,234 +23,202 @@
             <button type="submit">Search</button>
         </form>
     </header>
-    <main>
-<section id="home">
+<main>
+    <section id="home">
+        <h2>Tax Filing Practice</h2>
 
-    <h2>Welcome to the Portal</h2>
+        <p>
+            Work through the forms in order. They begin with
+            basic text inputs and finish with a more complete
+            tax return.
+        </p>
 
-    <p>
-        This online system allows registered taxpayers to
-        <b>file returns</b>, <i>manage payments</i>, and track submissions
-        online. The portal is designed to simplify communication
-        between taxpayers and the tax authority.
-    </p>
-
-    <p>
-        Use the navigation menu above to explore filing options,
-        review your payment history, or contact support if you
-        need assistance.
-    </p>
-
-    <p>
-        <mark>New users must verify their email before submitting
-            a first return.</mark>
-    </p>
-
-    <p>
-        Filing types include
-        <abbr title="Value Added Tax">VAT</abbr>,
-        <abbr title="Corporate Income Tax">CIT</abbr>, and
-        <abbr title="Personal Income Tax">PIT</abbr>.
-    </p>
-
-    <figure>
-        <img src="Figure.png" alt="Taxpayer dashboard showing filing information" width="700">
-
-        <figcaption>
-            Figure 1: Overview of the taxpayer dashboard
-        </figcaption>
-    </figure>
-
-</section>
-    </main>
-<article>
-
-    <h2>Announcement: VAT Filing Deadline Extended</h2>
-
-    <p>
-        The deadline for quarterly VAT filing has been extended
-        by two weeks to accommodate the recent system maintenance
-        window.
-    </p>
-
-    <figure>
-        <blockquote>
-            <p>
-                All pending VAT submissions will now be accepted
-                until the end of the month without penalty.
-            </p>
-        </blockquote>
-
-        <figcaption>
-            Source: Portal Communications Team.
-        </figcaption>
-    </figure>
-
-    <p>
-        Published:
-        <time datetime="2026-07-20">20 July 2026</time>
-    </p>
-
-</article>
-</footer>
-<section>
-    <h2>Recent Filing Types</h2>
-    <h4> Filing status for the current period</h4>
-<table border ="1">
-<tr>
-    <th>Tax Type</th>
-    <th>Filing Period</th>
-    <th>Status</th>
-</tr>
-
-<tr>
-    <th>VAT </th>
-    <td>Q2 2026</td>
-    <td>Submitted</td>
-</tr>
-<tr>
-    <th>CIT</th>
-    <td>2025 Annual</td>
-    <td>Pending</td>
-</tr>
-<tr>
-    <th>PIT</th>
-    <td>2025 Annual</td>
-    <td>Draft</td>
-</tr>
-</table>
-<div>
-    <label for="completion">Overall filing completion this quarter:</label>
-    <progress id="completion" value="70" max="100">70%</progress>
-    <label for="completion">Average review score for submitted filings:</label>
-<progress id="completion" value="70" max="100">70%</progress>
-</div>
-</section>
-<section id="payments">
-
-    <h2>Register a Payment</h2>
-<form>
-
-    <fieldset>
-        <legend>Personal details</legend>
-
-        <div>
-            <label for="fullname">Full Name</label>
-            <input type="text" id="fullname" name="fullname" required>
-        </div>
-
-        <div>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-    </fieldset>
-
-    <fieldset>
-        <legend>Payment details</legend>
-
-        <div>
-            <label for="amount">Amount (OMR)</label>
-            <input type="number" id="amount" name="amount" min="0" list="amount-options" step="0.01" required>
-            <datalist id ="amount-options">
-            <option value="100">
-            <option value ="500">
-            <option value ="1000">
-            </datalist>
-
-
-            <small>
-                Enter the amount in Omani Rials, up to two decimal places.
-            </small>
-        </div>
-
-        <div>
-            <label for="tax-type">Tax Type</label>
-
-            <select id="tax-type" name="tax-type" required>
-                <option value="">Choose a tax type</option>
-                <option value="vat">VAT</option>
-                <option value="cit">CIT</option>
-                <option value="pit">PIT</option>
-
-            </select>
-        </div>
-
-        <div>
-            <input type="checkbox" id="confirmation" name="confirmation" required>
-
-
-            <label for="confirmation">
-                I confirm the information above is accurate.
-            </label>
-        </div>
-
-    </fieldset>
-
-    <button type="submit">Submit Payment</button>
-    <button type="reset">Clear Form</button>
-
-
-</form>
-</section>
-
-<section>
-    <h2>Quick Links</h2>
-    <ol>
-        <li><a href="#">How to file a VAT return</a></li>
-        <li><a href="#">Payment methods accepted</a></li>
-        <li><a href="#">Download tax certificates</a></li>
-        <li><a href="#">Contact a support agent</a></li>
-    </ol>
+        <p>
+            <strong>Learning goal:</strong>
+            Notice how labels, names, values, validation,
+            and grouped controls work together.
+        </p>
     </section>
 
-<section>
-</nav>
-<section>
+    <section id="tax-filing">
+        <h2>1. Taxpayer Contact</h2>
 
-    <h2>Key Terms</h2>
+        <p>
+            A simple form using text, email, telephone, and submit controls.
+        </p>
 
-    <dl>
+        <form>
+            <div>
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+            </div>
 
-        <dt>VAT</dt>
-        <dd>
-            A tax added to most goods and services
-            at the point of sale.
-        </dd>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+            </div>
 
-        <dt>Filing Period</dt>
-        <dd>
-            The date range a given return or payment covers.
-        </dd>
+            <div>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
 
-    </dl>
+            <button type="submit"
+                style="background-color: blue; border: none; height: 40px; padding: 10px 20px; color: white;">
+                Save content
+            </button>
+        </form>
+    </section>
 
-</section>
-<footer>
+    <section id="payment">
+        <h2>2. Choose a Return</h2>
 
-    <small>
-        © 2026 Taxpayer Portal. All rights reserved.
-    </small>
+        <p>
+            This form adds select menus, dates,
+            radio buttons, and grouped controls.
+        </p>
 
-    <address>
+        <form>
+            <fieldset>
+                <legend><strong>Filing details</strong></legend>
 
-        Support:
-        <a href="mailto:support@example.com">
-            support@example.com
-        </a>
+                <p>
+                    <label for="tax-type">Tax type</label><br>
 
-        | Phone:
-        <a href="tel:+96812345678">
-            +968 1234 5678
-        </a>
+                    <select id="tax-type" name="tax-type" required>
+                        <option value="">Choose a tax type</option>
+                        <option value="VAT">VAT</option>
+                        <option value="CIT">Corporate Income Tax</option>
+                        <option value="PIT">Personal Income Tax</option>
+                    </select>
+                </p>
 
-    </address>
+                <p>
+                    <label for="period">Period ending</label><br>
+                    <input type="date" id="period" name="period">
+                </p>
+            </fieldset>
 
-    <nav>
-        <a href="#privacy">Privacy Policy</a> |
-        <a href="#terms">Terms of Use</a> |
-        <a href="#support">Contact Us</a>
-    </nav>
+            <fieldset>
+                <legend><strong>Return frequency</strong></legend>
 
-</footer>
+                <p>
+                    <input type="radio" id="monthly" name="frequency" value="monthly">
+                    <label for="monthly">Monthly</label>
+                </p>
+
+                <p>
+                    <input type="radio" id="quarterly" name="frequency" value="quarterly">
+                    <label for="quarterly">Quarterly</label>
+                </p>
+
+                <p>
+                    <input type="radio" id="annual" name="frequency" value="annual">
+                    <label for="annual">Annual</label>
+                </p>
+            </fieldset>
+
+            <button type="submit"
+                style="background-color: blue; border: none; height: 40px; padding: 10px 20px; color: white;">
+                Continue
+            </button>
+        </form>
+    </section>
+    <section>
+        <h2>3. Income and Deductions </h2>
+        <p>
+            This form introduces number inputs, a datalist,
+            a range control, a textarea, and calculated output.
+        </p>
+        <form>
+            <fieldset>
+                <legend><strong>Tax calculation</strong></legend>
+                <p>
+                    <label for="gross-income">Gross income (OMR)</label>
+                    <br>
+                    <input type="number" id="gross-income" name="gross-income" min="0" step="0.01" required>
+                </p>
+                <p>
+                    <label for="Allowable-deductions"> Allowable Deductions (OMR)</label>
+                    <br>
+                    <input type="number" id="Allowable-deductions" name="Allowable-deductions" min="0" step="0.01"
+                        required>
+                </p>
+            </fieldset>
+            <p>
+                <label for="confedence">Confidence</label>
+                <br>
+                <input type="number" id="confedence" name="confedence" min="1" max="10">
+                <br>
+                <small>Confidence in this estimate (1–10)</small>
+            </p>
+            <p>
+                <label for="Calculation-notes">Calculation notes</label>
+                <br>
+                <textarea id="Calculation-notes" name="Calculation-notes" rows="4" cols="50"></textarea>
+            </p>
+            <button type="submit"
+                style="background-color: blue; border: none; height: 40px; padding: 10px 20px; color: white;">
+                Save Calculate
+            </button>
+        </form>
+    </section>
+    <section>
+        <h2>4. Complete and Submit</h2>
+        <p> The final form combines document upload,
+            checkboxes, month and time controls, a declaration,
+            and reset and submit actions.</p>
+        <fieldset>
+            <legend><strong>Supporting records</strong></legend>
+            <br>
+            <p>
+                <label for="Accounting-month">Accounting month</label>
+                <input type="month" id="Accounting-month" name="Accounting-month" required>
+            </p>
+            <br>
+            <p>Upload support documents :</p>
+            <input type="file" id="support-documents" name="support-documents" accept=".pdf,.jpg ,.png ,.csv" multiple
+                required>
+            <br>
+            <small>Accepted formats: PDF, JPG, PNG, CSV</small>
+            <br> <br>
+            <p>Record Included :</p>
+            <input type="checkbox" id="Sales-invoice" name="Sales-invoice" value="Sales-invoice">
+            <label for="Sales-invoice">Sales invoice</label><br>
+            <br>
+            <input type="checkbox" id="Expense-receipt" name="Expense-receipt" value="Expense-receipt">
+            <label for="Expense-receipt">Expense receipt</label><br>
+            <br>
+            <input type="checkbox" id="Bank-statement" name="Bank-statement" value="Bank-statement">
+            <label for="Bank-statement">Bank statement</label><br>
+        </fieldset>
+        <fieldset>
+            <legend> <strong> Declaration</strong></legend>
+            <p>Type your full name as a signature</p>
+            <label for="signature"></label>
+            <input type="text" id="signature" name="signature" required>
+            <br>
+            <p>Time signed</p>
+            <label for="time-signed"></label>
+            <input type="time" id="time-signed" name="time-signed" required>
+            <br> <br>
+            <input type="checkbox" id="declaration" name="declaration" required>
+            <label for="declaration">I confirm that the information in this practice return is accurate.</label>
+        </fieldset>
+        <button type="submit"
+            style="background-color: blue; border: none; height: 40px; padding: 10px 20px; color: white;">
+            Submit practice Return
+        </button>
+        <button type="reset"
+            style="background-color: blue; border: none; height: 40px; padding: 10px 20px; color: white;">
+            Clear Form
+        </button>
+
+
+    </section>
+
+</main>
 </body>
+
 </html>
+
