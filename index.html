@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My HTML Practice</title>
-    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -30,7 +33,7 @@
             </div>
         </form>
     </header>
-    <main>
+    <main class="warapper">
         <section id="home">
 
             <h2>Welcome to the Portal</h2>
@@ -100,10 +103,10 @@
 
     </article>
     </footer>
-    <section>
+    <section class="filing-section">
         <h2>Recent Filing Types</h2>
         <h4> Filing status for the current period</h4>
-        <table border="1">
+        <table border="2" >
             <tr>
                 <th>Tax Type</th>
                 <th>Filing Period</th>
@@ -126,12 +129,18 @@
                 <td>Draft</td>
             </tr>
         </table>
-        <div>
+         <div class="progress">
+            <div>
             <label for="completion">Overall filing completion this quarter:</label>
             <progress id="completion" value="70" max="100">70%</progress>
+            </div>
+
+            <div>
             <label for="completion">Average review score for submitted filings:</label>
             <progress id="completion" value="70" max="100">70%</progress>
         </div>
+        </div>
+    
     </section>
     <section id="payments">
 
