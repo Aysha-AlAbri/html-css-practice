@@ -269,3 +269,207 @@ article time {
     height: 8px;
     accent-color: var(--color-progress);
 }
+.register-payment{
+    position:relative;
+}
+.payment-secure::after{
+    content: 'Secure';
+    position:absolute;
+    right: 10px;
+    top:10px;
+    color: var(--color-success);
+    font-weight: 700;
+    padding: 12px 16px;
+    border-radius: 8px;
+    background-color: var(--color-success-bg);
+}
+.register-payment::after{
+    font-weight: 700;
+    padding:12px 16px;
+    border-radius: 14px;
+    transition: background-color ease .3s;
+}
+.register-payment:hover::after{
+    background-color: var(--color-success-hover);
+}
+.register-payment fieldset{
+    background-color: var(--color-field-bg);
+    margin-top: 20px;
+    padding: 20px;
+    border:1px solid var(--color-field-border);
+}
+.register-payment legend{
+    color:var(--color-primary);
+    font-weight: 700;
+}
+.register-payment fieldset label{
+    color: var(--color-text);
+    font-weight: bold;
+    margin-top: 16px;
+    display: block;
+    
+}
+.register-fieldset input, .register-fieldset select{
+    width: 100%;
+    margin-top:5px;
+    height: 36px;
+    border:1px solid var(--color-field-border);
+    border-radius: 4px;
+    padding-left: 1px;
+    background-color: var(--color-white);
+}
+.register-fieldset input:focus-visible, .register-fieldset select:focus-visible {
+    border-color: var(--color-focus);
+    border-width: 2px;
+    outline: none;
+}
+.register-payment fieldset label::after{
+    content: '*';
+    color:var(--color-danger);
+    padding-left: 5px;
+}
+.register-payment small{
+    color: var(--color-muted);
+    font-size: 14px;
+}
+.register-payment button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+.checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.checkbox-wrapper label {
+    font-size: 16px;
+}
+
+.checkbox-wrapper input {
+    width: 13px;
+    height: 13px;
+    appearance: auto;
+    opacity: 1;
+    border-radius: 2px;
+    border: 1px solid;
+}
+.checkbox-wrapper input:checked {
+    accent-color: var(--color-primary);
+}
+.register-payment button{
+    border: 1px solid var(--color-primary);
+    padding: 11px 25px;
+    color:var(--color-primary);
+    background-color:transparent;
+    border-radius: 4px;
+}
+.register-payment button:hover{
+    background-color: var(--color-button-hover);
+    color: var(--color-text-light);
+}
+.btn-wrapper{
+    margin-top: 20px;
+}
+.final-info {
+    background-color: var(--color-section-bg);
+    border: 1px solid var(--color-field-border);
+    padding: 20px 24px;
+    border-radius: 6px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.final-info section {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.final-info h2 {
+    color: var(--color-section-heading);
+    font-size: 18px;
+}
+
+.final-info ol {
+    list-style: none;
+    padding: 0;
+}
+
+.final-info li {
+    border-bottom: 1px solid var(--color-border);
+}
+
+.final-info a {
+    width: 100%;
+    display: block;
+    position: relative;
+    color:  var(--color-primary);
+    text-decoration: none;
+    padding: 8px 16px 8px 0;
+}
+
+.final-info a::after {
+    content: '→';
+    position: absolute;
+    right: 0;
+}
+
+.final-info a:hover {
+    color: var(--color-link-hover);
+    text-decoration: underline;
+}
+
+.final-info dt {
+    color: var(--color-primary);
+    font-weight: bold;
+    margin-top: 16px;
+}
+
+.final-info dd {
+    margin: 8px 0 16px 12px;
+    color:  var(--color-paragraph);
+}
+
+.faq {
+    margin-top: 20px;
+}
+
+.faq details {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-field-border);
+    border-radius: 5px;
+    margin-top: 8px;
+}
+
+.faq summary {
+    color: var(--color-primary);
+    font-weight: bold;
+    padding: 12px;
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+}
+
+.faq summary::after {
+    content: '+';
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.faq details:hover {
+    border-color: var(--color-primary);
+    background-color: var(--color-field-bg);
+}
+
+.faq details[open] summary::after {
+    content: '−';
+}
+
+.faq details p {
+    padding: 0 12px 12px;
+    margin: 0;
+    color: var(--color-paragraph);
+}

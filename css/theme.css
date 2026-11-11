@@ -18,4 +18,17 @@
     --color-border: #D0DCE8;
     --color-border-light: #D8E2EE;
     --color-progress: #4056B5;
+    --color-success: #276139;
+    --color-success-bg: #D4EDDA;
+    --color-success-hover: #A1ECB3;
+    --color-field-bg: #F8FAFF;
+    --color-field-border: #B0C4DE;
+    --color-focus: #0075FF;
+    --color-danger: red;
+    --color-muted: #666666;
+    --color-section-bg: #EEF3FB;
+    --color-section-heading: #2C4A6E;
+    --color-link-hover: #007BFF;
+    --color-button-hover: #767676;
+    
 }
